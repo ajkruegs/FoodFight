@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'fight/index'
-
-  get 'fight_controller/index'
+  get '/', to: 'fight#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
