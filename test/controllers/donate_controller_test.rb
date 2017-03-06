@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class FightControllerTest < ActionDispatch::IntegrationTest
+class DonateControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get fight_index_url
+    get donate_index_url
     assert_response :success
   end
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'fight/index'
-  get '/', to: 'fight#index'
+  get 'donate/sign_in'
+  get 'donate/index'
+  root 'donate#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]

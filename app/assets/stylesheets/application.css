@@ -14,4 +14,11 @@
  *= require_self
  *= require bootstrap.min
  */
- 
+ .main-content {
+ 	text-align: center;
+ }
+
+ .food-btn {
+ 	margin: auto;
+    width: 25%;
+ }

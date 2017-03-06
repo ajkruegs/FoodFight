@@ -1,0 +1,8 @@
+<div id="user-widget">
+  <% if current_user %>
+    Hi <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= render partial: "sign_in", object: @current_user %>
+  <% end %>
+</div>
