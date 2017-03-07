@@ -11,7 +11,6 @@ window.fbAsyncInit = ->
   $('#sign_in').click (e) ->
     e.preventDefault()
     FB.login (response) ->
-      console.log("hello")
       if response.authResponse
         window.location = '/auth/facebook/callback'
       else

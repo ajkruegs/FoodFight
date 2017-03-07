@@ -1,7 +1,7 @@
 <div class="main-content" id="user-widget">
   <h1><small>Welcome to Food Fight where blah blah blah...</small></h1>
   <% if current_user %>
-    Hi <strong><%= current_user.name %></strong>!
+    Hi <strong><%= @current_user.name %></strong>!
     <%-# <%= link_to "Sign out", signout_path, id: "sign_out" -%>
   <% else %>
     <%= render partial: "sign_in", object: @current_user %>
