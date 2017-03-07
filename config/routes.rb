@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'donate/sign_in'
-  get 'donate/index'
+  get '/sign_in', to: 'donate#sign_in'
+  get '/index', to: 'donate#index'
+  get '/about', to: 'donate#about'
+  
   root 'donate#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

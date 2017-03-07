@@ -3,6 +3,9 @@ class DonateController < ApplicationController
   	@current_user = :current_user
   end
 
+  def about
+  end
+
   def sign_in
   end
 
