@@ -9,6 +9,9 @@ class DonateController < ApplicationController
   def sign_in
   end
 
+  def select_food
+  end
+  
   def throw_food
   end
 end
