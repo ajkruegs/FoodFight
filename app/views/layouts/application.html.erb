@@ -7,24 +7,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-<body><div id="fb-root"></div>
-      <div class="header">
-        <ul class="navbar">
-          <li class="active"><a class="nav-link" href="/index">Join the Fight</a></li>
-          <li><a class="nav-link" href="/about" id="">About Us</a></li>
-          <li><a class="nav-link" href="#">Donate</a></li>
+<body>
+    <header class="navbar navbar-light">
+      <div class="navbar-class">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/index">Join the Fight</a></li>
+          <li><a href="/about" id=>About Us</a></li>
+          <li><a href="#">Donate</a></li>
         </ul>
       </div>
-    <div id="content">
-    	<div id="hero-image">
-    		<img src="veggies.jpg" />
-    	</div>
-      <div class="main-content" id="user-widget">
-  <h1><small>Welcome to Food Fight where blah blah blah...</small></h1>
-    Hi <strong>Doofus</strong>!
-    <form class="button_to" method="post" action="/signout"><input class="food-btn btn btn-primary" id="sign_out" type="submit" value="Sign Out"><input type="hidden" name="authenticity_token" value="V6KkuxUbwyDE6GTLeaCn50adJuF/tZa25Y642wRvHkTYZDzIAdJGG1RWs/JfsGxVsqGlF+Yplq3jJDMA9LB+hg=="></form>
-</div>    </div>
-  
-
-</body>
+    </header>
+    <div id = "content">
+      <%= yield -%>
+    </div>
+  </body>
 </html>
