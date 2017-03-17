@@ -50,12 +50,13 @@ ul {
  	font-size:12vw;
  	}
  
- #hero-image {
+ #hero_image {
  	height:400px;
+	width:100%;
  	overflow-y:hidden;
  }
  
- #hero-image img {
+ #hero_image img {
  	 width:100%;
  }
  
