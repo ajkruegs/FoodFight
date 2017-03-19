@@ -2,12 +2,16 @@
 <html>
   <head>
     <title>FoodFight</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <%= csrf_meta_tags %>
-
+	
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body><div id="fb-root"></div>
+  <body>
+  <div id="fb-root"></div>
+  
       <div class="header">
         <ul class="navbar">
           <li class="active"><a class="nav-link" href="/index">Join the Fight</a></li>
@@ -16,10 +20,13 @@
         </ul>
       </div>
       <div id="hero_image">
-        <img src='veggies.jpg' />
+       <img src='banner@2x.jpg' />
       </div>
-    <div id = "content">
+    <div id = "game_content">
       <%= yield -%>
     </div>
+    
+
+	<%= render "donation" %>
   </body>
 </html>
