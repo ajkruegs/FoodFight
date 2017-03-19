@@ -12,10 +12,23 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap.min
+
  */
+  
+ @font-face {
+ 	font-family: 'meltdown';
+ 	src: url(<%= asset_path("meltdown.ttf") %>);
+ 	src: url(<%= asset_path("meltdown.ttf#iefix") %>) format('embedded-opentype'), /* IE6-IE8 */
+    url(<%= asset_path("meltdown.ttf") %>)  format('truetype'), /* Safari, Android, iOS */
+       }
+       
+ html {
+ 	box-sizing:border-box;
+ 	}
+ 
  body {
- 	font-family: "Helvetica Neue", sans-serif;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight:300;
  	margin:0px;
  	}
  
@@ -23,8 +36,10 @@
  	text-align: center;
  }
 
-ul {
+ul.navbar {
 	margin:0px;
+	padding-left:10px;
+	border:0px;
 }
 
  .food-btn {
@@ -35,6 +50,7 @@ ul {
  .header {
  	width:100%;
  	background-color:#03a9f4;
+ 	font-weight:300;
  	}
  
  .nav-link {
@@ -50,18 +66,39 @@ ul {
  	font-size:12vw;
  	}
  
- #hero_image {
- 	height:400px;
-	width:100%;
- 	overflow-y:hidden;
- }
- 
  #hero_image img {
  	 width:100%;
  }
  
+ 
+#game_content {
+	width: 99%;
+	margin: 5px auto;
+	overflow-y: scroll;
+	border:1px solid #000;
+	height:660px;
+	}
 
- @media only screen and (min-width:1200px) {
+h1, h3 {
+	font-weight:400;
+	}
+	
+#donate {
+	text-align: center;
+	padding: 0px 10px;
+	}
+
+#donate p {
+	margin-top:0px;
+	}
+
+.donationButton {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+ @media (min-width:1200px) {
  	.header {
  		 height:5vw;
  		 line-height:5vw;
@@ -71,7 +108,7 @@ ul {
  		}
  	}
  
- @media only screen and (min-width:800px) and (max-width:1199px) {
+ @media (min-width:800px) and (max-width:1199px) {
  	.header {
  		 height:5vw;
  		 line-height:5vw;
@@ -81,7 +118,7 @@ ul {
  		}
  	}
  	
- @media only screen and (min-width : 600px) and (max-width:799px) {
+ @media (min-width : 600px) and (max-width:799px) {
 	 .header {
  		 	height:6.5vw;
  		 	line-height:6.5vw;
@@ -91,12 +128,18 @@ ul {
  		}
  	}
 
-@media only screen and (min-width : 300px) and (max-width:599px) {
-	 	.header {
+@media (min-width : 300px) and (max-width:599px) {
+	 .header {
  		 	height:9.5vw;
  		 	line-height:9.5vw;
  		 	}
  	li {
  		font-size: 4vw;
+ 		}
+ 	h1 {
+ 		font-size: 7vw;
+ 		}
+ 	h3 {
+ 		font-size: 5vw;
  		}
  	} 
