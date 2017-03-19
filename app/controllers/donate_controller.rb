@@ -14,4 +14,7 @@ class DonateController < ApplicationController
   
   def throw_food
   end
+  
+  def donation
+  end
 end
