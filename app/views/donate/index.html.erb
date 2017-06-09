@@ -1,5 +1,5 @@
 <div class="main-content" id="user-widget">
-  <h1><small>Welcome to Food Fight where blah blah blah...</small></h1>
+  <h1><small>Connect your Facebook account to get started</small></h1>
   <% if current_user %>
     Hi <strong><%= @current_user.name %></strong>!
     <%= button_to "Sign Out", signout_path, class: "food-btn btn btn-primary", id: "sign_out" %>

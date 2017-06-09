@@ -1,3 +1,7 @@
 <div class="main-content">
   <%= button_to "Sign in with Facebook", "/auth/facebook", class: "food-btn btn btn-primary", id: "sign_in" %>
 </div>
+
+<div class='buttonHolder'> <!--remove from this step, placeholder until sign in works. Eventually, successful sign in should take you to the next step.-->
+  <%= link_to "Next", select_food_path, :class => "button secButton nextButton", :remote => true %>
+</div>

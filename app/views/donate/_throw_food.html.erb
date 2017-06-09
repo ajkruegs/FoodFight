@@ -1,3 +1,8 @@
-<div class="main-content">
+<div id='main-content'>
+<p>You're about to throw a [food] at [friend]! Ready to launch it?</p>
+</div>
 
+<div class='buttonHolder'> <!--use for each step-->
+  <%= link_to "Previous", select_friend_path, :class => "button secButton prevButton", :remote => true %>
+  <%= link_to "Throw it!", confirm_throw_path, :class => "button secButton nextButton", :remote => true %>
 </div>
