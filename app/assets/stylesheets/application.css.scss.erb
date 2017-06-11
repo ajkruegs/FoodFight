@@ -208,6 +208,9 @@ h1, h3 {
  	li {
  		font-size: 1.5vw;
  		}
+ 	.mobileTitle, .mobileBG {
+ 		display:none;
+ 		}
  	}
  
  @media (min-width:800px) and (max-width:1199px) {
@@ -218,9 +221,12 @@ h1, h3 {
  	li {
  		font-size: 2vw;
  		}
+ 	.mobileTitle, .mobileBG {
+ 		display:none;
+ 		}
  	}
  	
- @media (min-width : 600px) and (max-width:799px) {
+@media (min-width : 600px) and (max-width:799px) {
 	 .header {
  		 	height:6.5vw;
  		 	line-height:6.5vw;
@@ -228,9 +234,12 @@ h1, h3 {
  	li {
  		font-size: 3vw;
  		}
- 	}
+ 	.mobileTitle, .mobileBG {
+ 		display:none;
+ 		}
+ }
 
-@media (min-width : 300px) and (max-width:599px) {
+@media (max-width:599px) {
 	 .header {
  		 	height:9.5vw;
  		 	line-height:9.5vw;
@@ -243,5 +252,23 @@ h1, h3 {
  		}
  	h3 {
  		font-size: 5vw;
+ 		}
+ 	.desktopTitle, .desktopBG {
+ 		display:none;
+ 		}
+ 	
+ 	#centered {
+ 		top:7%;
+ 		}
+ 	#centered img {
+ 		width:56%;
+ 		}
+ 	#centered h1 {	
+ 		margin-top: -2px;
+ 		margin-bottom: 12px;
+ 		}
+ 	.joinButton {
+ 		height: 44px;
+ 		line-height: 48px;
  		}
  	} 
